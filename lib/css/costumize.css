@@ -1,0 +1,22 @@
+.search {
+	height: 30px;
+	border-radius: 0;
+}
+
+.search-icon {
+	cursor: pointer;
+}
+
+.nav-info a {
+	text-decoration: none;
+	font-style: none;
+	color: #fff !important;
+}
+
+.read a:hover {
+	color: #dc3545!important;
+}
+
+
+
+
