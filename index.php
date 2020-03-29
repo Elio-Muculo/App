@@ -86,7 +86,7 @@ while ($row_msg = mysqli_fetch_assoc($resultado_carousel)) {
 </div>
 <!-- Fim Menu logotipo & mensagem do dia -->
 <hr class="bg-dark my-0">
-<!-- Inicio Menu -->
+<!-- Inicio Menu  principal-->
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
 	<!-- <a class="navbar-brand" href="#">navbar</a> -->
 	<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
