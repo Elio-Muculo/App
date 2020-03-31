@@ -197,7 +197,7 @@ while ($row_news = mysqli_fetch_assoc($resultado_news)) {?>
 							<div class="media">
 								<img class="mr-3" src="galeria/noticias/<?php echo $row_news['foto']; ?>" alt="<?php echo utf8_encode($row_news['titulo']); ?>" style="height: 95px; width: 145px;">
 								<div class="media-body">
-									<p class="mt-0"><?php echo utf8_encode($row_news['subtitulo']); ?>
+									<p class="mt-0"><?php echo $row_news['subtitulo']; ?>
 										<a href="views/noticias.php?id=<?=$row_news['id']?>">Leia Mais</a>
 									</div>
 								</div>
