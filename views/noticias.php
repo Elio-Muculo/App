@@ -40,7 +40,7 @@ $dados = mysqli_fetch_assoc($result);
         .vjs-default-skin .vjs-slider { background: rgba(0,0,0,0.15666666666666665) }
         .vjs-default-skin .vjs-control-bar { font-size: 133% }
         </style>
-        <title>Vidas Transformadas</title>
+        <title>Noticias</title>
     </head>
     <body style="background-color: #eee;">
         <nav class="bg-dark py-1 nav-info">
@@ -117,7 +117,7 @@ $sql = "SELECT * FROM msg ORDER BY id DESC LIMIT 1";
 $result = mysqli_query($connect, $sql);
 while ($msg = mysqli_fetch_assoc($result)) {
 	?>
-                            <p class="font-italic text-dark">" <?php echo utf8_encode($msg['mensagem']); ?> "</p>
+                            <p class="font-italic text-dark">" <?php echo $msg['mensagem']; ?> "</p>
                             <?php }?>
                         </div>
                     </div>
@@ -170,10 +170,10 @@ while ($msg = mysqli_fetch_assoc($result)) {
                     <div class="row justify-content-around">
                         <div class="mt-5">
                             <hr class="bg-danger ml-0 mb-0" style="width: 35px;">
-                            <h5 class="pt-2 text-uppercase"><?php echo utf8_encode($dados['titulo']); ?></h5>
-                            <p><?php echo utf8_encode($dados['subtitulo']); ?><br>
-                                Autor: <?php echo utf8_encode($dados['autor']); ?><br>
-                            Publicado em: <?php echo utf8_encode($dados['data']); ?></p>
+                            <h5 class="pt-2 text-uppercase"><?php echo $dados['titulo']; ?></h5>
+                            <p><?php echo $dados['subtitulo']; ?><br>
+                                Autor: <?php echo $dados['autor']; ?><br>
+                            Publicado em: <?php echo $dados['data']; ?></p>
                         </div>
                         <div class="mt-3 mt-md-5">
                             <img class="mr-3" src="../galeria/noticias/<?php echo $dados['foto']; ?>" alt="<?php echo $row_news['titulo']; ?>" style="height: 135px; width: 245px;">

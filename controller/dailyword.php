@@ -13,8 +13,8 @@ $mensagem = clear($_POST['msg']);
 if (!empty($mensagem)) {
 	$sql = "INSERT INTO msg (id, mensagem) VALUES (NULL, '$mensagem')";
 	mysqli_query($connect, $sql);
-	header("Location: ../administrador/admnistrador.php?mensagem=sucess");
+	header("Location: ../administrador/index.php?mensagem=sucess");
 	mysqli_close($connect);
 } else {
-	header("Location: ../administrador/admnistrador.php?mensagem=error");
+	header("Location: ../administrador/index.php?mensagem=error");
 }
